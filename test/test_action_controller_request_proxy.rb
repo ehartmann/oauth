@@ -1,4 +1,4 @@
-gem 'actionpack','2.2.2'
+gem 'actionpack','= 2.3.4'
 require File.dirname(__FILE__) + '/test_helper.rb'
 
 require 'oauth/request_proxy/action_controller_request'
@@ -17,7 +17,7 @@ class ActionControllerRequestProxyTest < Test::Unit::TestCase
 
     request.env['REQUEST_URI'] = '/'
     request.env['RAW_POST_DATA'] = body_params.to_query
-    request.env['QUERY_STRING'] = body_params.to_query
+#    request.env['QUERY_STRING'] = body_params.to_query
     request.env['CONTENT_TYPE'] = 'application/x-www-form-urlencoded'
 
     yield request if block_given?
