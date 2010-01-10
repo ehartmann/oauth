@@ -2,7 +2,6 @@
 require File.dirname(__FILE__) + '/test_helper.rb'
 
 class TestOauth < Test::Unit::TestCase
-
   include OAuth::Helper
   
   def test_parameter_escaping_kcode_invariant

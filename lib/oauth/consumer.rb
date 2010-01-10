@@ -38,6 +38,9 @@ module OAuth
 
       # Default http method used for OAuth Token Requests (defaults to :post)
       :http_method   => :post,
+      
+      # Add a custom ca_file for consumer
+      # :ca_file       => '/etc/certs.pem'
 
       # Add a custom ca_file for consumer
       # :ca_file       => '/etc/certs.pem'

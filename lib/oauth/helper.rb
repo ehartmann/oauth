@@ -71,7 +71,6 @@ module OAuth
       # convert into a Hash
       Hash[*params.flatten]
     end
-
     
     # A secure version of equals meant to avoid timing attacks as specified here
     # http://codahale.com/a-lesson-in-timing-attacks/
